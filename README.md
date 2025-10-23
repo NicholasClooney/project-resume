@@ -9,18 +9,20 @@ Data-driven curriculum vitae built with [Eleventy (11ty)](https://www.11ty.dev/)
 
 ## Project Structure
 - `_data/cv.yaml` — primary data source; update this file with your experience, skills, and links.
-- `_includes/layout.njk` — base HTML frame, including print-friendly styles and the PDF trigger.
+- `_includes/layout.njk` — base HTML frame, print preview toggle, and PDF trigger.
 - `index.njk` — page template that renders sections using the YAML data.
-- `css/style.css` — shared styling for desktop preview and A4 print layout.
+- `css/base.css` — shared styling for desktop and print layouts.
+- `css/preview.css` — applies print rules when the “Preview Print Layout” toggle is active.
+- `css/print.css` — `@media print` overrides and `@page` sizing used by the browser when printing.
 - `.eleventy.js` — Eleventy configuration enabling YAML data loading and stylesheet passthrough.
 
 ## Customization
 - Edit `_data/cv.yaml` to adjust content. Keep entries chronological (newest first) to match the rendered order.
 - Modify or add sections in `index.njk` to reflect additional resume components (e.g., awards, speaking).
-- Tweak typography, spacing, and print rules in `css/style.css`. The layout relies on A4 dimensions (`210mm` width, `@page` size).
+- Tweak shared typography and spacing in `css/base.css`, on-page print preview tweaks in `css/preview.css`, and print-only directives in `css/print.css`. The layout relies on A4 dimensions (`210mm` width, `@page` size).
 
 ## PDF Export
-- In the browser preview, use the “Download PDF” button (or `⌘/Ctrl + P`) to open the print dialog.
+- Use the “Preview Print Layout” button to apply print styles in-browser, then “Download PDF” (or `⌘/Ctrl + P`) to open the print dialog.
 - Disable browser-supplied headers/footers if you want a clean PDF (Chrome: *More Settings → Headers and footers*).
 - Ensure print margins remain at the defaults defined in CSS (`12mm` via `@page`).
 

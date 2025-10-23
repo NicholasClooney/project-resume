@@ -1,0 +1,26 @@
+body.print-preview {
+    background-color: #ffffff;
+    padding: 0;
+}
+
+body.print-preview .page {
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 20mm;
+    width: 210mm;
+    min-height: 297mm;
+}
+
+body.print-preview .download-actions {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+    width: auto;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+body.print-preview .download-actions button.preview-toggle[aria-pressed="true"] {
+    background-color: #555;
+}
