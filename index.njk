@@ -5,9 +5,9 @@ layout: layout.njk
 <header>
     <h1>{{ cv.name }}</h1>
     <div class="contact-info">
-        <span>{{ cv.contact.email }}</span>
-        <span>{{ cv.contact.phone }}</span>
-        <span>{{ cv.contact.website }}</span>
+        <span><a href="mailto:{{ cv.contact.email }}">{{ cv.contact.email }}</a></span>
+        <span><a href="tel:{{ cv.contact.phone | replace(' ', '') | replace('(', '') | replace(')', '') }}">{{ cv.contact.phone }}</a></span>
+        <span><a href="{{ cv.contact.website }}" target="_blank" rel="noopener">{{ cv.contact.website | replace('https://', '') | replace('http://', '') | replace('www.', '') | trim }}</a></span>
     </div>
 </header>
 
@@ -15,16 +15,43 @@ layout: layout.njk
     <p>{{ cv.summary }}</p>
 </section>
 
+{% if cv.skills %}
+<section class="skills">
+    <h2>Core Skills</h2>
+    <div class="skills-grid">
+        {% for skill in cv.skills %}
+        <div class="skill">
+            <h3>{{ skill.label }}</h3>
+            {% if skill.items %}
+            <ul>
+                {% for item in skill.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+            {% elseif skill.description %}
+            <p>{{ skill.description }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
 <section class="professional-experience">
     <h2>Professional Experience</h2>
-    {% for job in cv.professionalExperience %}
+    {% for job in cv.experience %}
     <div class="job">
         <div class="job-header">
-            <h3>{{ job.title }} &middot; {{ job.company }} &middot; {{ job.location }}</h3>
+            <h3>
+                {{ job.title }}{% if job.company %} &middot; {{ job.company }}{% endif %}{% if job.location %} &middot; {{ job.location }}{% endif %}
+            </h3>
             <span class="dates">{{ job.startDate }} – {{ job.endDate }}</span>
         </div>
+        {% if job.summary %}
+        <p class="job-summary">{{ job.summary }}</p>
+        {% endif %}
         <ul>
-            {% for item in job.responsibilities %}
+            {% for item in job.achievements %}
             <li>{{ item }}</li>
             {% endfor %}
         </ul>
@@ -32,19 +59,27 @@ layout: layout.njk
     {% endfor %}
 </section>
 
-<section class="community-experience">
-    <h2>Community Experience</h2>
-    {% for role in cv.communityExperience %}
-    <div class="role">
-        <div class="role-header">
-            <h3>{{ role.title }} &middot; {{ role.organization }}</h3>
-            <span class="dates">{{ role.startDate }} – {{ role.endDate }}</span>
-        </div>
-        <ul>
-            {% for item in role.responsibilities %}
-            <li>{{ item }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endfor %}
+{% if cv.openSourceProjects %}
+<section class="open-source">
+    <h2>Open Source Projects</h2>
+    <ul class="project-list">
+        {% for project in cv.openSourceProjects %}
+        <li>
+            <h3><a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
+            <p>{{ project.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
+{% endif %}
+
+{% if cv.interests %}
+<section class="interests">
+    <h2>Interests</h2>
+    <ul>
+        {% for interest in cv.interests %}
+        <li>{{ interest }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
