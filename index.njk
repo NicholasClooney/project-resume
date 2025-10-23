@@ -1,0 +1,50 @@
+---
+layout: layout.njk
+---
+
+<header>
+    <h1>{{ cv.name }}</h1>
+    <div class="contact-info">
+        <span>{{ cv.contact.email }}</span>
+        <span>{{ cv.contact.phone }}</span>
+        <span>{{ cv.contact.website }}</span>
+    </div>
+</header>
+
+<section class="summary">
+    <p>{{ cv.summary }}</p>
+</section>
+
+<section class="professional-experience">
+    <h2>Professional Experience</h2>
+    {% for job in cv.professionalExperience %}
+    <div class="job">
+        <div class="job-header">
+            <h3>{{ job.title }} &middot; {{ job.company }} &middot; {{ job.location }}</h3>
+            <span class="dates">{{ job.startDate }} – {{ job.endDate }}</span>
+        </div>
+        <ul>
+            {% for item in job.responsibilities %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</section>
+
+<section class="community-experience">
+    <h2>Community Experience</h2>
+    {% for role in cv.communityExperience %}
+    <div class="role">
+        <div class="role-header">
+            <h3>{{ role.title }} &middot; {{ role.organization }}</h3>
+            <span class="dates">{{ role.startDate }} – {{ role.endDate }}</span>
+        </div>
+        <ul>
+            {% for item in role.responsibilities %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</section>
