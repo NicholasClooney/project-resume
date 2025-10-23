@@ -12,10 +12,41 @@ body {
 .page {
     background: #ffffff;
     width: 210mm;
-    height: 297mm;
+    min-height: 297mm;
     margin: 0 auto;
     padding: 20mm;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.download-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto 1rem;
+    width: 210mm;
+    max-width: 100%;
+}
+
+.download-actions button {
+    background-color: #333;
+    color: #fff;
+    font-family: inherit;
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.download-actions button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.download-actions button:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
 }
 
 h1 {
@@ -85,9 +116,20 @@ a:hover {
         padding: 0;
     }
 
+    .download-actions {
+        display: none;
+    }
+
     .page {
         box-shadow: none;
-        margin: 0;
-        padding: 0;
+        margin: 0 auto;
+        padding: 20mm;
+        width: 100%;
+        min-height: auto;
     }
+}
+
+@page {
+    size: A4;
+    margin: 12mm;
 }
