@@ -23,6 +23,7 @@ Data-driven curriculum vitae built with [Eleventy (11ty)](https://www.11ty.dev/)
 
 ## PDF Export
 - Use the “Preview Print Layout” button to apply print styles in-browser, then “Download PDF” (or `⌘/Ctrl + P`) to open the print dialog.
+- Faint dividers appear every 297mm in preview mode to mirror where the browser will paginate A4 pages.
 - Disable browser-supplied headers/footers if you want a clean PDF (Chrome: *More Settings → Headers and footers*).
 - Ensure print margins remain at the defaults defined in CSS (`12mm` via `@page`).
 

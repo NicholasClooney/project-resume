@@ -1,26 +1,46 @@
-body.print-preview {
-    background-color: #ffffff;
-    padding: 0;
-}
+@media screen {
+    body.print-preview {
+        background-color: #ffffff;
+        padding: 0;
+    }
 
-body.print-preview .page {
-    box-shadow: none;
-    margin: 0 auto;
-    padding: 20mm;
-    width: 210mm;
-    min-height: 297mm;
-}
+    body.print-preview .page {
+        position: relative;
+        box-shadow: none;
+        margin: 0 auto;
+        padding: 20mm;
+        width: 210mm;
+        min-height: 297mm;
+    }
 
-body.print-preview .download-actions {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    margin: 0;
-    width: auto;
-    gap: 0.5rem;
-    z-index: 10;
-}
+    body.print-preview .page::after {
+        content: "";
+        position: absolute;
+        top: calc(297mm - 0.6mm);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: repeating-linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.12) 0,
+            rgba(0, 0, 0, 0.12) 0.6mm,
+            transparent 0.6mm,
+            transparent 297mm
+        );
+        pointer-events: none;
+    }
 
-body.print-preview .download-actions button.preview-toggle[aria-pressed="true"] {
-    background-color: #555;
+    body.print-preview .download-actions {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        margin: 0;
+        width: auto;
+        gap: 0.5rem;
+        z-index: 10;
+    }
+
+    body.print-preview .download-actions button.preview-toggle[aria-pressed="true"] {
+        background-color: #555;
+    }
 }
