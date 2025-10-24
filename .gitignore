@@ -1,0 +1,4 @@
+*.pdf
+*.typst.log
+build/
+.DS_Store

@@ -1,0 +1,9 @@
+[project]
+name = "resume"
+version = "0.1.0"
+entry = "src/resume.typ"
+authors = ["Nicholas Clooney"]
+description = "Typst-powered resume generator that renders from structured YAML data."
+
+[output.resume]
+path = "build/resume.pdf"
