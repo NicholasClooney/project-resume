@@ -8,12 +8,6 @@ summary: >
   Specialized in scalable mobile architectures, automated testing, and monorepo CI/CD pipelines.
   Collaborative technical leader who builds maintainable, testable components and empowers cross-functional teams to deliver impactful software.
 skills:
-  - label: "Core Competencies"
-    items:
-      - "Scalable mobile architectures for iOS and tvOS"
-      - "Automated testing, tooling, and release management"
-      - "Cross-functional technical leadership and mentorship"
-      - "Continuous delivery across distributed teams"
   - label: "Languages & Frameworks"
     items:
       - "Swift"
@@ -27,7 +21,7 @@ skills:
   - label: "Software Practices"
     items:
       - "MVVM-C"
-      - "Functional Reactive Programming (FRP)"
+      - "FRP"
       - "SOLID principles"
       - "Test-Driven Development"
       - "Clean, composable architecture"
