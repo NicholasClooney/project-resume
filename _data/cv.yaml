@@ -22,9 +22,9 @@ skills:
     items:
       - "MVVM-C"
       - "FRP"
-      - "SOLID principles"
-      - "Test-Driven Development"
-      - "Clean, composable architecture"
+      - "SOLID"
+      - "TDD / BDD"
+      - "Clean & Composable Architecture"
   - label: "Tools"
     items:
       - "Fastlane"
