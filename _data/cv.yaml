@@ -60,10 +60,38 @@ experience:
     endDate: "May 2022"
     summary: "Designed and maintained Kasada’s iOS SDK, delivering resilient mobile defenses that protect billions of requests monthly."
     achievements:
-      - "Engineered a modular, fully tested SDK architecture (97% coverage, zero critical bugs), enabling on-the-fly component swaps and rapid pivots."
+      - |
+        Sole architect and maintainer of the iOS SDK from inception to production,
+        delivering a modular (enabling rapid pivots), thread-safe system with defensive design that
+        allowed flexible multi-instance usage and near-zero integration issues.
       - "Researched and implemented automation-detection capabilities that strengthened customer defenses at scale."
-      - "Established automated CI/CD and a cross-platform testing framework, cutting manual effort by 95% and improving release reliability."
-      - "Led client integration support, mentorship programs, and interview frameworks to ensure smooth roll-outs and team growth."
+      - |
+        Authored comprehensive developer documentation, sample apps, and API references,
+        resulting in zero customer support overhead and rapid adoption across enterprise teams.
+      - |
+        Implemented a function-based interface for dependency injection, enabling high testability
+        without protocols or mock objects and achieving 95% end-to-end test coverage.
+      - |
+        Built a custom integrated test harness leveraging functional mocks to validate multi-threaded
+        behaviors under real-world network and timing conditions.
+      - |
+        Established cross-platform CI/CD pipelines (Bitrise → CircleCI → GitHub Actions) driven by Python Invoke and Fastlane,
+        unifying build, lint, and release workflows across providers & local development.
+      - |
+        Created developer automation tooling that mirrored CI pipelines locally,
+        cutting iteration time and feedback loops.
+      - |
+        Introduced semantic versioning, commit conventions, and automated linting/formatting,
+        ensuring consistent SDK releases and reproducible builds.
+      - |
+        Participated in on-call rotation, managing incidents impacting global customers
+        and leading post-mortem analyses for sustained reliability improvements.
+      - |
+        Wrote Architectural Decision Records (ADRs) and led cross-team reviews
+        to align mobile security strategy with backend and research teams.
+      - |
+        Championed knowledge sharing and mentorship through company-wide presentations,
+        internal documentation, and hands-on sessions supporting both mobile and platform engineers.
   - title: "Senior iOS Engineer"
     company: "Domain"
     startDate: "April 2016"
