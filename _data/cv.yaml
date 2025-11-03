@@ -5,7 +5,7 @@ contact:
   website: "https://blog.nicholas.clooney.io/"
 summary: >
   Senior Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
-  Specialized in scalable mobile architectures, automated testing, and monorepo CI/CD pipelines.
+  Specialized in scalable mobile architectures, automated testing, and ownership of CI/CD pipelines.
   Collaborative technical leader who builds maintainable, testable components and empowers cross-functional teams to deliver impactful software.
 skills:
   - label: "Languages & Frameworks"
@@ -41,7 +41,7 @@ experience:
     endDate: "June 2025"
     summary: "Led iOS and tvOS development for Binge, Kayo, and Flash, covering high-traffic streaming apps serving millions of Australian users."
     achievements:
-      - "Redesigned the core tvOS UI with the native focus engine, significantly improving navigation satisfaction."
+      - "Led redesign of core tvOS experience with the native focus engine, significantly improving navigation satisfaction."
       - "Built a unified monorepo CI/CD pipeline across three apps, cutting build times by 60% and reducing weekly merge-conflict resolution by 10 hours."
       - "Managed code signing, TestFlight releases, and third-party integrations, maintaining 100% on-time releases during peak traffic."
       - "Resolved deep-linking and UI defects, reducing the post-release bug backlog by 32% and boosting the crash-free rate to 95%."
