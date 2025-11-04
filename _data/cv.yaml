@@ -1,6 +1,13 @@
 name: "Nicholas Clooney"
 contact:
   website: "https://blog.nicholas.clooney.io/"
+sections:
+  enabled:
+    - experiences
+    - projects
+  disabled:
+    - skills
+    - interests
 summary: >
   Senior Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
   Specialized in scalable mobile architectures, automated testing, and ownership of CI/CD pipelines.
