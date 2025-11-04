@@ -43,9 +43,9 @@ experience:
       - |
         Redesigned the core tvOS experience with the native Focus Engine and modern UICollectionView, significantly improving navigation fluidity and user satisfaction.
       - |
-        Integrated Kayo into the unified monorepo, navigating undocumented configurations and aligning build tooling to enable consistent, multi-app development workflows.
-      - |
         Built and unified the CI/CD pipeline across three apps, boosting developer productivity and confidence by enabling the mobile team to fully transition from legacy standalone repos to a unified monorepo environment.
+      - |
+        Integrated Kayo into the unified monorepo, navigating undocumented configurations and aligning build tooling to enable consistent, multi-app development workflows.
   - title: "Lead iOS Engineer"
     company: "Slyp"
     startDate: "May 2022"
