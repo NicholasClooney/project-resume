@@ -39,12 +39,15 @@ experience:
     company: "Streamotion"
     startDate: "March 2023"
     endDate: "June 2025"
-    summary: "Led iOS and tvOS development for Binge, Kayo, and Flash, covering high-traffic streaming apps serving millions of Australian users."
+    summary: |
+      Led iOS and tvOS development for Binge, Kayo, and Flash, driving modernization across Streamotion’s Apple platform and enabling the mobile team to deliver high-quality releases with confidence and speed.
     achievements:
-      - "Led redesign of core tvOS experience with the native focus engine, significantly improving navigation satisfaction."
-      - "Built a unified monorepo CI/CD pipeline across three apps, cutting build times by 60% and reducing weekly merge-conflict resolution by 10 hours."
-      - "Managed code signing, TestFlight releases, and third-party integrations, maintaining 100% on-time releases during peak traffic."
-      - "Resolved deep-linking and UI defects, reducing the post-release bug backlog by 32% and boosting the crash-free rate to 95%."
+      - |
+        Redesigned the core tvOS experience with the native Focus Engine and modern UICollectionView, significantly improving navigation fluidity and user satisfaction.
+      - |
+        Integrated Kayo into the unified monorepo, navigating undocumented configurations and aligning build tooling to enable consistent, multi-app development workflows.
+      - |
+        Built and unified the CI/CD pipeline across three apps, boosting developer productivity and confidence by enabling the mobile team to fully transition from legacy standalone repos to a unified monorepo environment.
   - title: "Lead iOS Engineer"
     company: "Slyp"
     startDate: "May 2022"
