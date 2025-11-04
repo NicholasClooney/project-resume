@@ -73,14 +73,9 @@ experience:
         Implemented a function-based interface for dependency injection, enabling high testability
         without protocols or mock objects and achieving 95% end-to-end test coverage.
       - |
-        Built a custom integrated test harness leveraging functional mocks to validate multi-threaded
-        behaviors under real-world network and timing conditions.
-      - |
-        Established cross-platform CI/CD pipelines (Bitrise → CircleCI → GitHub Actions) driven by Python Invoke and Fastlane,
-        unifying build, lint, and release workflows across providers & local development.
-      - |
-        Created developer automation tooling that mirrored CI pipelines locally,
-        cutting iteration time and feedback loops.
+        Established platform agnostic CI/CD pipelines driven by Python Invoke and Fastlane,
+        unifying build, lint, and release workflows across providers
+        (Bitrise, CircleCI, GitHub Actions) & local development (cutting iteration time and feedback loops).
       - |
         Introduced semantic versioning, commit conventions, and automated linting/formatting,
         ensuring consistent SDK releases and reproducible builds.
