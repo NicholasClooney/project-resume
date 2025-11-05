@@ -3,10 +3,10 @@ contact:
   website: "https://blog.nicholas.clooney.io/"
 sections:
   enabled:
+    - skills
     - experiences
     - projects
   disabled:
-    - skills
     - interests
 summary: >
   Senior Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
@@ -21,6 +21,7 @@ skills:
       - "Combine"
       - "ReactiveSwift"
       - "Python"
+      - "PyInvoke"
       - "Kotlin"
       - "TypeScript"
   - label: "Software Practices"
@@ -32,6 +33,7 @@ skills:
       - "Clean & Composable Architecture"
   - label: "Tools"
     items:
+      - "Git"
       - "Fastlane"
       - "Xcode"
       - "Monorepo tooling"
@@ -45,19 +47,30 @@ experience:
     startDate: "March 2023"
     endDate: "June 2025"
     summary: |
-      Led iOS and tvOS development for Binge, Kayo, and Flash, driving modernization across Streamotion’s Apple platform and enabling the mobile team to deliver high-quality releases with confidence and speed.
+      Led iOS and tvOS development for Binge, Kayo, and Flash (streaming video services),
+      driving modernization by overhauling the core tvOS experience and
+      unifying the CI/CD pipeline across Streamotion's Apple platform.
     achievements:
       - |
-        Redesigned the core tvOS experience with the native Focus Engine and modern UICollectionView, significantly improving navigation fluidity and user satisfaction.
+        Redesigned the core tvOS experience with the native Focus Engine and
+        modern UICollectionView, significantly improving navigation fluidity and user satisfaction.
       - |
-        Built and unified the CI/CD pipeline across three apps, boosting developer productivity and confidence by enabling the mobile team to fully transition from legacy standalone repos to a unified monorepo environment.
+        Built and unified the CI/CD pipeline across three apps,
+        boosting developer productivity and confidence by
+        enabling the mobile team to fully transition
+        from legacy standalone repos to a unified monorepo environment.
       - |
-        Integrated Kayo into the unified monorepo, navigating undocumented configurations and aligning build tooling to enable consistent, multi-app development workflows.
+        Integrated Kayo into the unified monorepo,
+        navigating undocumented configurations and
+        aligning build tooling to enable consistent, multi-app development workflows.
   - title: "Lead iOS Engineer"
     company: "Slyp"
     startDate: "May 2022"
     endDate: "February 2023"
-    summary: "Drove the design and delivery of Slyp’s iOS SDK for interactive smart receipts, partnering closely with retail and banking stakeholders."
+    summary: |
+      Drove the design and delivery of Slyp's iOS SDK,
+      tripling feature delivery speed and cutting the hot-fix rate by 60% by
+      championing modern architecture and mandatory CI checks.
     achievements:
       - "Championed SwiftUI, Combine, and Swift Composable Architecture, tripling feature delivery speed while sustaining 85% automated test coverage."
       - "Led cross-functional alignment workshops, reducing sign-off cycle time by 70% on major banking integrations."
@@ -74,27 +87,20 @@ experience:
         allowed flexible multi-instance usage and near-zero integration issues.
       - "Researched and implemented automation-detection capabilities that strengthened customer defenses at scale."
       - |
-        Authored comprehensive developer documentation, sample apps, and API references,
-        resulting in zero customer support overhead and rapid adoption across enterprise teams.
+        Engineered a highly testable SDK with 95% test coverage and
+        authored comprehensive documentation, leading to
+        zero customer support overhead and rapid enterprise adoption.
       - |
-        Implemented a function-based interface for dependency injection, enabling high testability
-        without protocols or mock objects and achieving 95% end-to-end test coverage.
-      - |
-        Established platform agnostic CI/CD pipelines driven by Python Invoke and Fastlane,
-        unifying build, lint, and release workflows across providers
-        (Bitrise, CircleCI, GitHub Actions) & local development (cutting iteration time and feedback loops).
-      - |
-        Introduced semantic versioning, commit conventions, and automated linting/formatting,
-        ensuring consistent SDK releases and reproducible builds.
+        Established a fully automated, platform-agnostic CI/CD pipeline
+        with semantic versioning and linting,
+        ensuring consistent, reproducible builds and cutting developer iteration time.
       - |
         Participated in on-call rotation, managing incidents impacting global customers
         and leading post-mortem analyses for sustained reliability improvements.
       - |
-        Wrote Architectural Decision Records (ADRs) and led cross-team reviews
-        to align mobile security strategy with backend and research teams.
-      - |
-        Championed knowledge sharing and mentorship through company-wide presentations,
-        internal documentation, and hands-on sessions supporting both mobile and platform engineers.
+        Drove architectural alignment and mobile security strategy
+        by authoring ADRs and leading cross-team reviews, mentoring engineers
+        through presentations and hands-on sessions.
   - title: "Senior iOS Engineer"
     company: "Domain"
     startDate: "April 2016"
