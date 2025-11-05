@@ -17,6 +17,7 @@ tags:
 
 name: "Nicholas Clooney"
 contact:
+  resume: "https://resume.nicholas.clooney.io/"
   website: "https://blog.nicholas.clooney.io/"
 summary: >
   Senior Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
