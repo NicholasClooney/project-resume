@@ -11,6 +11,7 @@ tags:
     - apple
     - dev-ops
     - design
+  excluded: []
 
 name: "Nicholas Clooney"
 contact:
@@ -40,10 +41,10 @@ skills:
       - "Clean & Composable Architecture"
   - label: "Tools"
     items:
+      - "Ansible"
       - "Git"
       - "Fastlane"
       - "Xcode"
-      - "Monorepo tooling"
       - "RESTful APIs"
       - "GitHub Actions"
       - "CircleCI"
@@ -150,8 +151,8 @@ experience:
           - documentation
           - sdk
       - text: |
-          Established a fully automated, platform-agnostic CI/CD pipeline
-          with semantic versioning and linting,
+          Established a fully automated, platform-agnostic CI/CD pipeline that
+          enforced SDK test coverage and documentation updates through automated PR reviews,
           ensuring consistent, reproducible builds and cutting developer iteration time.
         tags:
           - dev-ops
@@ -219,6 +220,7 @@ openSourceProjects:
   - name: "dotfiles"
     url: "https://github.com/TheClooneyCollection/dotfiles"
     description: "Personal shell, editor, and OS configurations showcasing scripting fluency and a focus on developer ergonomics."
+
 interests:
   - "Woodworking"
   - "Improv comedy"
