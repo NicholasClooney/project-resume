@@ -57,6 +57,7 @@ experience:
     company: "Streamotion"
     startDate: "March 2023"
     endDate: "June 2025"
+    pageBreakBefore: false
     summary: |
       Led iOS and tvOS development for Binge, Kayo, and Flash (streaming video services),
       driving modernization by overhauling the core tvOS experience and
@@ -97,6 +98,7 @@ experience:
     company: "Slyp"
     startDate: "May 2022"
     endDate: "February 2023"
+    pageBreakBefore: false
     summary: |
       Drove the design and delivery of Slyp's iOS SDK,
       tripling feature delivery speed and cutting the hot-fix rate by 60% by
@@ -128,6 +130,7 @@ experience:
     company: "Kasada"
     startDate: "August 2019"
     endDate: "May 2022"
+    pageBreakBefore: true
     summary: "Designed and maintained Kasada’s Apple Platform SDK, delivering resilient mobile defenses that protect billions of requests monthly."
     achievements:
       - text: |
