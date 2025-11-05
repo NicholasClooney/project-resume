@@ -8,10 +8,12 @@ sections:
 
 tags:
   included:
-    - apple
+    - leadership
     - dev-ops
     - design
-  excluded: []
+    - dotfiles
+  excluded:
+    - apple
 
 name: "Nicholas Clooney"
 contact:
@@ -211,15 +213,44 @@ experience:
           - migration
           - performance
 openSourceProjects:
-  - name: "ansible-macOS-playbook"
+  - name: Ansible macOS Playbook
     url: "https://github.com/TheClooneyCollection/ansible-macOS-playbook"
     description: "Automates full macOS developer workstation provisioning end-to-end in minutes using Ansible."
+    tags:
+      - dev-ops
+      - ansible
+      - macos
+  - name: Project Lighthouse
+    url: https://github.com/TheClooneyCollection/ansible-project-lighthouse
+    description: Ansible playbook for a self-hosted server stack with Nginx, V2Ray, Certbot, Tailscale, and Umami analytics.
+    tags:
+      - dev-ops
+      - ansible
+      - docker
+  - name: Ansible Role For Umami
+    url: https://github.com/TheClooneyCollection/ansible-role-umami
+    description: Deploys the Umami analytics stack with Docker Compose, env-secret management, and proxy-friendly defaults.
+    tags:
+      - dev-ops
+      - ansible
+      - docker
+      - umami
   - name: "11ty-subspace-builder"
     url: "https://github.com/TheClooneyCollection/11ty-subspace-builder"
     description: "Warp-speed Eleventy blog starter featuring accessible navigation, responsive images, and automated social previews."
+    tags:
+      - eleventy
+      - web
   - name: "dotfiles"
     url: "https://github.com/TheClooneyCollection/dotfiles"
     description: "Personal shell, editor, and OS configurations showcasing scripting fluency and a focus on developer ergonomics."
+    tags:
+      - dotfiles
+      - macos
+      - shell
+      - editors
+      - git
+      - tmux
 
 interests:
   - "Woodworking"
