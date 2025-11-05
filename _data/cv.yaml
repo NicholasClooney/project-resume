@@ -8,11 +8,12 @@ sections:
 
 tags:
   included:
+    - must-have
     - leadership
     - dev-ops
-    - design
+    - testing
     - dotfiles
-  excluded:
+  excluded: 
     - apple
 
 name: "Nicholas Clooney"
@@ -138,11 +139,12 @@ experience:
           delivering a modular (enabling rapid pivots), thread-safe system with defensive design that
           allowed flexible multi-instance usage and near-zero integration issues.
         tags:
+          - must-have
           - design
           - modular
           - architecture
           - sdk
-          - apple
+          # - apple
           - swift
           - ios
           - tvos
@@ -190,6 +192,7 @@ experience:
     company: "Domain"
     startDate: "April 2016"
     endDate: "July 2019"
+    pageBreakBefore: false
     summary: "Delivered feature development and UX improvements for Australia’s top property search app, focusing on reusable, scalable components."
     achievements:
       - text: "Architected an in-app ads delivery engine that generated millions in annual revenue through targeted, reusable components."
@@ -206,6 +209,7 @@ experience:
           - stability
       - text: "Introduced Behavior-Driven Development (Given/When/Then) for acceptance criteria, reducing requirement churn by 30%."
         tags:
+          - testing
           - design
           - process
           - bdd
