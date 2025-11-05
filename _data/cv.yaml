@@ -210,16 +210,122 @@ experience:
           - ci-cd
           - migration
           - performance
-openSourceProjects:
-  - name: "ansible-macOS-playbook"
-    url: "https://github.com/TheClooneyCollection/ansible-macOS-playbook"
-    description: "Automates full macOS developer workstation provisioning end-to-end in minutes using Ansible."
-  - name: "11ty-subspace-builder"
-    url: "https://github.com/TheClooneyCollection/11ty-subspace-builder"
-    description: "Warp-speed Eleventy blog starter featuring accessible navigation, responsive images, and automated social previews."
+
+projects:
   - name: "dotfiles"
     url: "https://github.com/TheClooneyCollection/dotfiles"
-    description: "Personal shell, editor, and OS configurations showcasing scripting fluency and a focus on developer ergonomics."
+    summary: "Personal shell, editor, and OS configurations showcasing scripting fluency and a focus on developer ergonomics."
+
+  - name: "ansible-macOS-playbook"
+    url: "https://github.com/TheClooneyCollection/ansible-macOS-playbook"
+    summary: |
+      Automated macOS development setup using modular Ansible roles for Homebrew,
+      dotfiles, editors, GUI apps, and system defaults.
+    tech:
+      - "Ansible"
+      - "macOS"
+      - "Shell"
+      - "Homebrew"
+      - "DevOps"
+      - "Infra"
+  - name: "Project Lighthouse"
+    url: "https://github.com/NicholasClooney/ansible-project-lighthouse"
+    summary: |
+      Infrastructure-as-code playbook that rebuilds the Project Lighthouse droplet
+      on Debian 13 with Docker, security hardening, and web-stack roles.
+    tech:
+      - "Ansible"
+      - "Debian"
+      - "Docker"
+      - "Nginx"
+      - "DevOps"
+      - "Infra"
+  - name: "Ansible Role For Umami"
+    url: "https://github.com/NicholasClooney/ansible-role-umami"
+    summary: |
+      Reusable Ansible role that deploys the Umami analytics stack with Docker
+      Compose, env-secret management, and proxy-friendly defaults.
+    tech:
+      - "Ansible"
+      - "Docker"
+      - "Docker Compose"
+      - "Umami"
+      - "Linux"
+      - "DevOps"
+      - "Infra"
+
+  - name: "11ty Subspace Builder"
+    url: "https://github.com/TheClooneyCollection/11ty-subspace-builder"
+    summary: |
+      Warp-speed Eleventy blog starter with Tachyons themes, accessible navigation,
+      responsive image pipelines, and GitHub snippet embeds.
+    tech:
+      - "Eleventy"
+      - "JavaScript"
+      - "Node.js"
+      - "Tachyons"
+      - "Nunjucks"
+      - "YAML"
+  - name: "Personal Digital Garden"
+    url: "https://github.com/NicholasClooney/blog.clooney.io"
+    summary: |
+      Source for my digital garden showcasing personal projects, write-ups,
+      built with 11ty Subspace Builder!
+
+      "Maximum warp. Engage!"
+    tech:
+      - "Eleventy"
+      - "JavaScript"
+      - "Node.js"
+      - "Tachyons"
+      - "Nunjucks"
+      - "YAML"
+  - name: "APK Transfer Kit"
+    url: "https://github.com/TheClooneyCollection/apk-transfer-kit"
+    summary: |
+      Python CLI toolkit that extracts Play Store APK splits with ADB and sideloads
+      them to devices like the Quest 3, keeping installs user-controlled.
+    tech:
+      - "Python"
+      - "ADB"
+      - "CLI"
+      - "Android"
+      - "Quest"
+      - "VR"
+  - name: "Project Joy"
+    url: "https://github.com/TheClooneyCollection/project-joy"
+    summary: |
+      Celebration microsite starter that blends curated copy, galleries, video,
+      audio, and playlists into a responsive single-page reveal.
+    tech:
+      - "Eleventy"
+      - "JavaScript"
+      - "Node.js"
+      - "Nunjucks"
+      - "YAML"
+  - name: "Project Luna"
+    url: "https://github.com/TheClooneyCollection/project-luna"
+    summary: |
+      Configurable lost-and-found companion site with carousel photos, optional
+      emergency info, and contact workflows fed by simple YAML data.
+    tech:
+      - "Eleventy"
+      - "JavaScript"
+      - "Node.js"
+      - "Nunjucks"
+      - "YAML"
+  - name: "Project Top Secret"
+    url: "https://github.com/TheClooneyCollection/project-top-secret"
+    summary: |
+      Passphrase-gated Eleventy starter that decrypts protected HTML in-browser
+      once visitors solve custom questions powered by WebCrypto.
+    tech:
+      - "Eleventy"
+      - "JavaScript"
+      - "Node.js"
+      - "Nunjucks"
+      - "YAML"
+      - "WebCrypto"
 
 interests:
   - "Woodworking"

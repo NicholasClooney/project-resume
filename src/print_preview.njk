@@ -88,14 +88,16 @@ permalink: print_preview/index.html
 </section>
 {% endif %}
 
-{% if showProjects and cv.openSourceProjects %}
+{% if showProjects and cv.projects %}
 <section class="open-source">
-    <h2>Open Source Projects</h2>
+    <h2>Projects</h2>
     <ul class="project-list">
-        {% for project in cv.openSourceProjects %}
+        {% for project in cv.projects %}
         <li>
             <h3><a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a></h3>
-            <p>{{ project.description }}</p>
+            {% if project.summary %}
+            <p>{{ project.summary | trim }}</p>
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
