@@ -8,20 +8,20 @@ sections:
 
 tags:
   included:
-    - must-have
+    - apple
     - leadership
     - dev-ops
     - testing
     - dotfiles
-  excluded: 
-    - apple
+  excluded:
+    - IGNORE
 
 name: "Nicholas Clooney"
 contact:
   resume: "https://resume.nicholas.clooney.io/"
   website: "https://blog.nicholas.clooney.io/"
 summary: >
-  Senior Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
+  Lead Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
   Specialized in scalable mobile architectures, automated testing, and ownership of CI/CD pipelines.
   Collaborative technical leader who builds maintainable, testable components and empowers cross-functional teams to deliver impactful software.
 skills:
@@ -46,13 +46,12 @@ skills:
   - label: "Tools"
     items:
       - "Ansible"
+      - AI Assisted Development
       - "Git"
-      - "Fastlane"
       - "Xcode"
+      - "Fastlane"
       - "RESTful APIs"
-      - "GitHub Actions"
-      - "CircleCI"
-      - "Bitrise"
+      - CI / CD Pipelines
 experience:
   - title: "Senior Apple Platform Engineer"
     company: "Streamotion"
@@ -60,7 +59,7 @@ experience:
     endDate: "June 2025"
     pageBreakBefore: false
     summary: |
-      Led iOS and tvOS development for Binge, Kayo, and Flash (streaming video services),
+      Led development for Binge, Kayo, and Flash (streaming video services),
       driving modernization by overhauling the core tvOS experience and
       unifying the CI/CD pipeline across Streamotion's Apple platform.
     achievements:
@@ -76,33 +75,46 @@ experience:
           - tvos
           - focus-engine
       - text: |
-          Built and unified the CI/CD pipeline across three apps,
+          Built and unified the CI/CD pipeline across apps,
           boosting developer productivity and confidence by
-          enabling the mobile team to fully transition
-          from legacy standalone repos to a unified monorepo environment.
+          enabling the team to fully transition
+          to a unified monorepo environment.
+        omitted:
+          - from legacy standalone repos 
         tags:
           - dev-ops
           - ci-cd
           - automation
           - monorepo
+
+      - text: |
+          Spearheaded knowledge sharing on CI/CD and git best practices through dedicated sessions,
+          significantly improving team-wide adoption of new pipeline features.
+        tags:
+          - leadership
+          - mentorship
+
+      # IGNORED... in PDF
       - text: |
           Integrated Kayo into the unified monorepo,
           navigating undocumented configurations and
           aligning build tooling to enable consistent, multi-app development workflows.
         tags:
+          - IGNORE
+
           - dev-ops
           - ci-cd
           - monorepo
           - integration
           - tooling
-  - title: "Lead iOS Engineer"
+  - title: "Lead Apple Platform Engineer"
     company: "Slyp"
     startDate: "May 2022"
     endDate: "February 2023"
     pageBreakBefore: false
     summary: |
-      Drove the design and delivery of Slyp's iOS SDK,
-      tripling feature delivery speed and cutting the hot-fix rate by 60% by
+      Drove the design and delivery of Slyp's Apple Platform SDK,
+      tripling feature delivery speed by
       championing modern architecture and mandatory CI checks.
     achievements:
       - text: "Championed SwiftUI, Combine, and Swift Composable Architecture, tripling feature delivery speed while sustaining 85% automated test coverage."
@@ -115,12 +127,18 @@ experience:
           - apple
           - swift
           - swiftui
-      - text: "Led cross-functional alignment workshops, reducing sign-off cycle time by 70% on major banking integrations."
+      - text: |
+          Led cross-functional alignment workshops,
+          reducing sign-off cycle time by 70%.
+        omitted:
+          -  on major banking integrations
         tags:
           - leadership
           - collaboration
           - integrations
-      - text: "Instituted mandatory tests, linters, and CI checks, increasing PR merge speed by 80% and cutting the hot-fix rate by 60%."
+      - text: |
+          Instituted mandatory CI checks,
+          increasing PR merge speed by 80% and cutting hot-fix rate by 60%.
         tags:
           - dev-ops
           - ci-cd
@@ -131,7 +149,7 @@ experience:
     company: "Kasada"
     startDate: "August 2019"
     endDate: "May 2022"
-    pageBreakBefore: true
+    pageBreakBefore: false
     summary: "Designed and maintained Kasada’s Apple Platform SDK, delivering resilient mobile defenses that protect billions of requests monthly."
     achievements:
       - text: |
@@ -139,12 +157,11 @@ experience:
           delivering a modular (enabling rapid pivots), thread-safe system with defensive design that
           allowed flexible multi-instance usage and near-zero integration issues.
         tags:
-          - must-have
           - design
           - modular
           - architecture
           - sdk
-          # - apple
+          - apple
           - swift
           - ios
           - tvos
@@ -185,39 +202,62 @@ experience:
           through presentations and hands-on sessions.
         tags:
           - leadership
+          - mentorship
           - architecture
           - design
+      - text: |
+          Mentored a team of junior and mid-level engineers in Swift, SDK design,
+          and secure coding practices, leading to increased team autonomy and
+          faster feature development through hands-on pairing and coaching.
+        tags:
+          - leadership
           - mentorship
   - title: "Senior iOS Engineer"
     company: "Domain"
     startDate: "April 2016"
     endDate: "July 2019"
     pageBreakBefore: false
-    summary: "Delivered feature development and UX improvements for Australia’s top property search app, focusing on reusable, scalable components."
+    summary: |
+      Drove major product and platform initiatives for Australia’s top property search app, focusing on reusable, scalable, high business impact components, and owning CI/CD.
     achievements:
-      - text: "Architected an in-app ads delivery engine that generated millions in annual revenue through targeted, reusable components."
+      - text: "Architected an in-app ads delivery engine generated millions in annual revenue."
+        omitted:
+          -  through targeted, reusable components.
         tags:
+          - IGNORE
+          - apple
+          - swift
           - design
           - architecture
           - revenue
           - ads
-      - text: "Implemented a Domain Model layer for the Search Results screen, achieving a 100% crash-free rate on a flagship feature."
+      - text: |
+          Implemented a domain model layer for Search Results, achieving 100% crash-free rate.
         tags:
+          - IGNORE
+          - apple
+          - swift
           - design
           - architecture
           - quality
           - stability
-      - text: "Introduced Behavior-Driven Development (Given/When/Then) for acceptance criteria, reducing requirement churn by 30%."
+
+      # IGNORED... in pdf
+      - text: "Introduced Behavior-Driven Development, reducing requirement churn by 30%."
         tags:
+          - IGNORE
           - testing
           - design
           - process
           - bdd
           - collaboration
+      # IGNORED... in pdf
       - text: |
-          Owned CI/CD pipelines and the migration from CircleCI 1.0 to 2.0,
-          slashing build times by 45% and accelerating release cadence.
+          Owned CI/CD pipelines slashing build times by 45% and accelerating release cadence.
+        omitted:
+           -  and CI migration from CircleCI 1.0 to 2.0
         tags:
+          - IGNORE
           - dev-ops
           - ci-cd
           - migration
