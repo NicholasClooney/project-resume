@@ -154,7 +154,7 @@ experience:
     achievements:
       - text: |
           Sole architect and maintainer of the SDK from inception to production,
-          delivering a modular (enabling rapid pivots), thread-safe system with defensive design that
+          delivering a security-first, modular (enabling rapid pivots), thread-safe system with defensive design that
           allowed flexible multi-instance usage and near-zero integration issues.
         tags:
           - design
@@ -206,9 +206,8 @@ experience:
           - architecture
           - design
       - text: |
-          Mentored a team of junior and mid-level engineers in Swift, SDK design,
-          and secure coding practices, leading to increased team autonomy and
-          faster feature development through hands-on pairing and coaching.
+          Led and coached a team of junior and mid-level engineers in Swift, SDK design,
+          and secure coding practices, conducting regular 1-on-1s and code reviews to foster technical growth and team autonomy.
         tags:
           - leadership
           - mentorship
