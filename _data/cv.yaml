@@ -20,6 +20,9 @@ name: "Nicholas Clooney"
 contact:
   resume: "https://resume.nicholas.clooney.io/"
   website: "https://blog.nicholas.clooney.io/"
+  githubProfile: "https://github.com/NicholasClooney"
+  githubCollection: "https://github.com/TheClooneyCollection"
+  githubRepo: "https://github.com/TheClooneyCollection/project-resume"
 summary: >
   Lead Apple Platform Engineer with 10 years of experience crafting high-traffic Swift and SwiftUI apps on iOS and tvOS.
   Specialized in scalable mobile architectures, automated testing, and ownership of CI/CD pipelines.
