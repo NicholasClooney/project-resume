@@ -13,8 +13,8 @@ tags:
     - dev-ops
     - testing
     - dotfiles
-  excluded:
-    - IGNORE
+  excluded: []
+    # - IGNORE
 
 name: "Nicholas Clooney"
 contact:
